@@ -17,6 +17,16 @@ or [YouTube channel](https://www.youtube.com/@BrickSortingMachine).
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1)](https://pycqa.github.io/isort/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
 
+## Security Notice
+
+This software uses network communication between its components. It's critical to understand that this communication is not secure by default. There is no authentication on messages received, meaning the system blindly trusts any client connected to the message broker.
+A malicious client on the same broker can send commands that could potentially damage the machine, exploit your system, or harm your network. The security of the entire system depends on the security of the broker and network configuration.
+To operate this software safely, you must adhere to the following rules:
+ * Use a Private Network: The communication is not secured by encryption, you must run this software exclusively on a private, isolated network that you fully control.
+ * Trusted Clients: Ensure that all third-party clients or other software modules connected to the same broker are fully trusted by you.
+
+If you're unsure what any of this means, we strongly advise against using this software.
+
 ## Getting Started
 
 If you want to build a LEGO® sorting machine yourself, I suggest to start with the [DIY build instructions](https://github.com/BrickSortingMachine). This repository maintains the software stack to operate LEGO® sorting machines. If you want to work on the machine learning components, the training scripts for the part classifier are maintained [here](https://github.com/BrickSortingMachine/BrickSortingMachine-training).
