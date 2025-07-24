@@ -19,7 +19,7 @@ or [YouTube channel](https://www.youtube.com/@BrickSortingMachine).
 
 ## Getting Started
 
-If you want to build a LEGO® sorting machine yourself, I suggest to start with the [DIY build instructions](https://github.com/BrickSortingMachine). This repository maintains the sources to operate the LEGO® sorting machine. If you want to work on the machine learning components, the training scripts for the part classifier are maintained [here](https://github.com/BrickSortingMachine/BrickSortingMachine-training).
+If you want to build a LEGO® sorting machine yourself, I suggest to start with the [DIY build instructions](https://github.com/BrickSortingMachine). This repository maintains the software stack to operate LEGO® sorting machines. If you want to work on the machine learning components, the training scripts for the part classifier are maintained [here](https://github.com/BrickSortingMachine/BrickSortingMachine-training).
 
 ## Installation
 With prerequisites [Python 3.11](https://www.python.org) and [Conda](https://docs.conda.io/projects/miniconda) installed, setup conda environment:
