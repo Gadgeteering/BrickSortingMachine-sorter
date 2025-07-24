@@ -20,7 +20,7 @@ or [YouTube channel](https://www.youtube.com/@BrickSortingMachine).
 ## Security Notice
 
 This software uses network communication between its components. It's critical to understand that this communication is not secure by default. There is no authentication on messages received, meaning the system blindly trusts any client connected to the message broker.
-A malicious client on the same broker can send commands that could potentially damage the machine, exploit your system, or harm your network. The security of the entire system depends on the security of the broker and network configuration.
+A malicious broker or client on the same broker can send commands that could potentially damage the machine, exploit your system, or harm your network. The security of the entire system depends on the security of the broker and network configuration.
 To operate this software safely, you must adhere to the following rules:
  * Use a Private Network: The communication is not secured by encryption, you must run this software exclusively on a private, isolated network that you fully control.
  * Trusted Clients: Ensure that all third-party clients or other software modules connected to the same broker are fully trusted by you.
