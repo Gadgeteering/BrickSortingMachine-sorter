@@ -68,7 +68,7 @@ class VSTcpClient(sorter.network.tcp_client.TcpClient):
                 )
                 logging.info(
                     f"Received classification result - id: {object_id} pc: {predicted_class}"
-                    " prob: {probability*100:.0f}% uniqueness: {uniqueness:.0f}"
+                    f" prob: {probability*100:.0f}% uniqueness: {uniqueness:.0f}"
                 )
                 self.vision_service.receive_classification_result(
                     object_id,

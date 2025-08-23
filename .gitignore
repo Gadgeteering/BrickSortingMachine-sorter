@@ -1,6 +1,9 @@
 # ide
 .vscode
 __pycache__
+.venv
+.venv_latest
+venv_sorter311
 
 # codespaces
 build/*
@@ -29,3 +32,4 @@ pushover_credentials.json
 *.pyc
 *.swp
 *.FCBak
+.coverage
